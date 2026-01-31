@@ -21,7 +21,6 @@ import {
   ChevronDown,
 } from 'lucide-react';
 import { ThemeToggle } from '@/components/theme-toggle';
-import Image from 'next/image';
 
 const navLinks = [
   { href: '/members', label: 'Members', icon: Users },
@@ -58,7 +57,7 @@ export function Header() {
     <header className="sticky top-0 z-50 w-full border-b bg-card/80 backdrop-blur-md">
       <div className="container mx-auto flex h-16 items-center px-4">
         <Link href="/" className="mr-6 flex items-center space-x-2">
-          <Image src="/logo.png" alt="Mujjar Mita Mandal Logo" width={40} height={40} />
+          <span className="font-bold">Mujjar Mita Mandal</span>
         </Link>
         <nav className="hidden items-center space-x-6 text-sm font-medium md:flex">
           {navLinks.map((link) =>
@@ -107,8 +106,8 @@ export function Header() {
                     </SheetTrigger>
                     <SheetContent side="left">
                     <div className="flex flex-col space-y-4 p-4">
-                        <Link href="/" className="mb-4" onClick={() => setMobileMenuOpen(false)}>
-                           <Image src="/logo.png" alt="Mujjar Mita Mandal Logo" width={60} height={60} />
+                        <Link href="/" className="mb-4 text-2xl font-bold" onClick={() => setMobileMenuOpen(false)}>
+                           Mujjar Mita Mandal
                         </Link>
                         {navLinks.map((link) =>
                         link.subLinks ? (
