@@ -20,6 +20,7 @@ import {
   Video,
   Heart,
   ChevronDown,
+  Share2,
 } from 'lucide-react';
 import { ThemeToggle } from '@/components/theme-toggle';
 
@@ -35,6 +36,7 @@ const navLinks = [
     ],
   },
   { href: '/donate', label: 'Donate', icon: Heart },
+  { href: '/social', label: 'Social', icon: Share2 },
 ];
 
 export function Header() {

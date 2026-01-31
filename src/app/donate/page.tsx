@@ -7,8 +7,8 @@ import { Heart } from 'lucide-react';
 
 export default function DonatePage() {
   return (
-    <div className="bg-background">
-      <div className="container mx-auto flex min-h-[70vh] items-center justify-center px-4 py-16 md:py-24">
+    <div className="bg-background min-h-[calc(100vh-4rem)] pb-20">
+      <div className="container mx-auto flex items-center justify-center px-4 py-16 md:py-24">
         <Card className="w-full max-w-md shadow-lg">
           <CardHeader className="text-center">
             <div className="mx-auto bg-primary text-primary-foreground rounded-full p-3 w-fit mb-4">
