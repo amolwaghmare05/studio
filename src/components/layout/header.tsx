@@ -18,9 +18,9 @@ import {
   Image as ImageIcon,
   Video,
   Heart,
-  Wand2,
   ChevronDown,
 } from 'lucide-react';
+import { ThemeToggle } from '@/components/theme-toggle';
 
 const navLinks = [
   { href: '/members', label: 'Members', icon: Users },
@@ -34,7 +34,6 @@ const navLinks = [
     ],
   },
   { href: '/donate', label: 'Donate', icon: Heart },
-  { href: '/generate', label: 'Generate Content', icon: Wand2 },
 ];
 
 export function Header() {
@@ -95,45 +94,48 @@ export function Header() {
             )
           )}
         </nav>
-        <div className="flex flex-1 items-center justify-end md:hidden">
-          <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
-            <SheetTrigger asChild>
-              <Button variant="ghost" size="icon">
-                <Menu className="h-6 w-6" />
-                <span className="sr-only">Open menu</span>
-              </Button>
-            </SheetTrigger>
-            <SheetContent side="left">
-              <div className="flex flex-col space-y-4 p-4">
-                <Link href="/" className="mb-4" onClick={() => setMobileMenuOpen(false)}>
-                  <span className="font-headline text-2xl font-bold text-primary">मुज्जर मित्र मंडळ</span>
-                </Link>
-                {navLinks.map((link) =>
-                  link.subLinks ? (
-                    <div key={link.label} className="flex flex-col space-y-2">
-                       <p className="font-semibold text-muted-foreground">{link.label}</p>
-                       {link.subLinks.map(subLink => (
-                         <Link key={subLink.href} href={subLink.href} className="flex items-center gap-2 pl-4 text-lg" onClick={() => setMobileMenuOpen(false)}>
-                            <subLink.icon className="h-5 w-5" />
-                            {subLink.label}
-                         </Link>
-                       ))}
+        <div className="flex flex-1 items-center justify-end">
+            <ThemeToggle />
+            <div className='md:hidden'>
+                <Sheet open={isMobileMenuOpen} onOpenChange={setMobileMenuOpen}>
+                    <SheetTrigger asChild>
+                    <Button variant="ghost" size="icon">
+                        <Menu className="h-6 w-6" />
+                        <span className="sr-only">Open menu</span>
+                    </Button>
+                    </SheetTrigger>
+                    <SheetContent side="left">
+                    <div className="flex flex-col space-y-4 p-4">
+                        <Link href="/" className="mb-4" onClick={() => setMobileMenuOpen(false)}>
+                        <span className="font-headline text-2xl font-bold text-primary">मुज्जर मित्र मंडळ</span>
+                        </Link>
+                        {navLinks.map((link) =>
+                        link.subLinks ? (
+                            <div key={link.label} className="flex flex-col space-y-2">
+                            <p className="font-semibold text-muted-foreground">{link.label}</p>
+                            {link.subLinks.map(subLink => (
+                                <Link key={subLink.href} href={subLink.href} className="flex items-center gap-2 pl-4 text-lg" onClick={() => setMobileMenuOpen(false)}>
+                                    <subLink.icon className="h-5 w-5" />
+                                    {subLink.label}
+                                </Link>
+                            ))}
+                            </div>
+                        ) : (
+                            <Link
+                            key={link.href}
+                            href={link.href}
+                            className="flex items-center gap-2 text-lg"
+                            onClick={() => setMobileMenuOpen(false)}
+                            >
+                            <link.icon className="h-5 w-5" />
+                            {link.label}
+                            </Link>
+                        )
+                        )}
                     </div>
-                  ) : (
-                    <Link
-                      key={link.href}
-                      href={link.href}
-                      className="flex items-center gap-2 text-lg"
-                      onClick={() => setMobileMenuOpen(false)}
-                    >
-                      <link.icon className="h-5 w-5" />
-                      {link.label}
-                    </Link>
-                  )
-                )}
-              </div>
-            </SheetContent>
-          </Sheet>
+                    </SheetContent>
+                </Sheet>
+            </div>
         </div>
       </div>
     </header>
