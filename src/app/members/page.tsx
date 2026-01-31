@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import { Card, CardContent } from '@/components/ui/card';
 import { members } from '@/lib/members';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -24,25 +23,22 @@ export default function MembersPage() {
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
           {members.map((member) => {
-            const memberImage = PlaceHolderImages.find((img) => img.id === member.imageId);
             return (
               <Card
                 key={member.id}
                 className="overflow-hidden group transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
               >
                 <CardContent className="p-0 text-center">
-                  {memberImage && (
-                    <div className="relative w-full aspect-square overflow-hidden">
-                      <Image
-                        src={memberImage.imageUrl}
-                        alt={`Profile of ${member.name}`}
-                        fill
-                        className="object-cover transition-transform duration-300 group-hover:scale-105"
-                        sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                        data-ai-hint={memberImage.imageHint}
-                      />
-                    </div>
-                  )}
+                  <div className="relative w-full aspect-square overflow-hidden">
+                    <Image
+                      src={`/members/member-${member.id}.png`}
+                      alt={`Profile of ${member.name}`}
+                      fill
+                      className="object-cover transition-transform duration-300 group-hover:scale-105"
+                      sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
+                      style={member.id === 10 ? { objectPosition: 'center 38%' } : member.id === 8 ? { objectPosition: 'center 0%' } : undefined}
+                    />
+                  </div>
                   <div className="p-6">
                     <h2 className="font-headline text-2xl font-semibold text-primary">
                       {member.name}

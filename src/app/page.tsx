@@ -61,25 +61,23 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
             {membersToShow.map((member) => {
-              const memberImage = PlaceHolderImages.find((img) => img.id === member.imageId);
               return (
                 <Card
                   key={member.id}
                   className="overflow-hidden group text-center transition-all duration-300 hover:shadow-xl hover:-translate-y-1"
                 >
                   <CardContent className="p-0">
-                    {memberImage && (
-                      <div className="relative w-full aspect-square">
-                        <Image
-                          src={memberImage.imageUrl}
-                          alt={member.name}
-                          fill
-                          className="object-cover transition-transform duration-300 group-hover:scale-105"
-                          sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                          data-ai-hint={memberImage.imageHint}
-                        />
-                      </div>
-                    )}
+                    <div className="relative w-full aspect-square bg-muted">
+                      <Image
+                        src={`/members/member-${member.id}.png`}
+                        alt={member.name}
+                        fill
+                        unoptimized
+                        className="object-cover transition-transform duration-300 group-hover:scale-105"
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        style={member.id === 10 ? { objectPosition: 'center 20%' } : member.id === 8 ? { objectPosition: 'center 20%' } : undefined}
+                      />
+                    </div>
                     <div className="p-4">
                       <h3 className="font-headline text-xl font-semibold text-primary">{member.name}</h3>
                       <p className="text-md text-accent">{member.title}</p>
