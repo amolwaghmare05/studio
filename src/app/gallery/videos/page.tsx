@@ -1,25 +1,21 @@
-import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
+'use client';
+
 import {
   Dialog,
   DialogContent,
-  DialogHeader,
   DialogTitle,
   DialogTrigger,
 } from '@/components/ui/dialog';
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 import { PlayCircle } from 'lucide-react';
 import type { Metadata } from 'next';
 
-export const metadata: Metadata = {
-  title: 'Video Gallery | Mujjar Mita Mandal',
-  description: 'Watch the adventures of the Mujjar Mita Mandal group.',
-};
+const videos = [
+  { id: 1, src: '/videos/video-1.mp4', title: 'Video 1' },
+  { id: 2, src: '/videos/video-2.mp4', title: 'Video 2' },
+];
 
 export default function VideoGalleryPage() {
-  const videoImages = PlaceHolderImages.filter((image) =>
-    image.id.startsWith('gallery-video-')
-  );
-
   return (
     <div className="bg-background">
       <div className="container mx-auto px-4 py-16 md:py-24">
@@ -33,37 +29,34 @@ export default function VideoGalleryPage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-          {videoImages.map((image) => (
-            <Dialog key={image.id}>
+          {videos.map((video) => (
+            <Dialog key={video.id}>
               <DialogTrigger asChild>
-                <div className="relative aspect-video w-full cursor-pointer overflow-hidden rounded-lg shadow-md transition-shadow duration-300 hover:shadow-xl group">
-                  <Image
-                    src={image.imageUrl}
-                    alt={image.description}
-                    fill
-                    className="object-cover"
-                    sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
-                    data-ai-hint={image.imageHint}
+                <div className="relative aspect-video w-full cursor-pointer overflow-hidden rounded-lg shadow-md transition-shadow duration-300 hover:shadow-xl group bg-muted">
+                  <video
+                    src={video.src}
+                    className="w-full h-full object-cover"
+                    preload="metadata"
                   />
                   <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
                     <PlayCircle className="h-16 w-16 text-white/70 transition-all duration-300 group-hover:text-white group-hover:scale-110" />
                   </div>
                 </div>
               </DialogTrigger>
-              <DialogContent className="max-w-3xl p-2">
-                 <div className="relative aspect-video w-full mt-4">
-                  <Image
-                    src={image.imageUrl}
-                    alt={image.description}
-                    fill
-                    className="object-contain"
-                    data-ai-hint={image.imageHint}
-                  />
+              <DialogContent className="max-w-4xl p-2">
+                <VisuallyHidden>
+                  <DialogTitle>{video.title}</DialogTitle>
+                </VisuallyHidden>
+                <div className="relative aspect-video w-full">
+                  <video
+                    src={video.src}
+                    controls
+                    className="w-full h-full rounded-md"
+                    autoPlay
+                  >
+                    Your browser does not support the video tag.
+                  </video>
                 </div>
-                <DialogHeader className="p-4">
-                  <DialogTitle className='font-headline'>{image.description}</DialogTitle>
-                  <p className="text-muted-foreground">Video playback is coming soon!</p>
-                </DialogHeader>
               </DialogContent>
             </Dialog>
           ))}

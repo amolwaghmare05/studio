@@ -5,12 +5,16 @@ import { Card, CardContent } from '@/components/ui/card';
 import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { members } from '@/lib/members';
 
+const galleryPhotos = [
+  { id: 1, src: '/gallery/photo-1.jpeg', alt: 'Gallery Photo 1' },
+  { id: 2, src: '/gallery/photo-2.jpeg', alt: 'Gallery Photo 2' },
+  { id: 3, src: '/gallery/photo-3.jpeg', alt: 'Gallery Photo 3' },
+  { id: 4, src: '/gallery/photo-4.jpeg', alt: 'Gallery Photo 4' },
+];
+
 export default function Home() {
   const heroImage = PlaceHolderImages.find((img) => img.id === 'hero-1');
   const membersToShow = members.slice(0, 4);
-  const galleryImages = PlaceHolderImages.filter((image) =>
-    image.id.startsWith('gallery-photo-')
-  ).slice(0, 4);
 
   return (
     <div className="flex flex-col">
@@ -103,15 +107,15 @@ export default function Home() {
                 <p className="mt-4 text-lg text-muted-foreground">आमच्या काही अविस्मरणीय क्षणांची एक झलक.</p>
             </div>
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4">
-                {galleryImages.map((image) => (
-                    <Link href="/gallery/photos" key={image.id} className="relative aspect-video w-full overflow-hidden rounded-lg shadow-md group">
+                {galleryPhotos.map((photo) => (
+                    <Link href="/gallery/photos" key={photo.id} className="relative aspect-video w-full overflow-hidden rounded-lg shadow-md group">
                         <Image
-                            src={image.imageUrl}
-                            alt={image.description}
+                            src={photo.src}
+                            alt={photo.alt}
                             fill
+                            unoptimized
                             className="object-cover transition-transform duration-300 group-hover:scale-105"
                             sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                            data-ai-hint={image.imageHint}
                         />
                          <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors" />
                     </Link>

@@ -1,18 +1,11 @@
+'use client';
+
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import { Heart } from 'lucide-react';
-import type { Metadata } from 'next';
-
-export const metadata: Metadata = {
-  title: 'Donate | Mujjar Mita Mandal',
-  description: 'Support the activities and events of the Mujjar Mita Mandal group.',
-};
 
 export default function DonatePage() {
-  const qrCodeImage = PlaceHolderImages.find((img) => img.id === 'donate-qr');
-
   return (
     <div className="bg-background">
       <div className="container mx-auto flex min-h-[70vh] items-center justify-center px-4 py-16 md:py-24">
@@ -30,19 +23,20 @@ export default function DonatePage() {
             <p className="text-center text-muted-foreground">
               खालील QR कोड स्कॅन करून किंवा बटण वापरून तुम्ही देणगी देऊ शकता. तुमच्या समर्थनाबद्दल धन्यवाद!
             </p>
-            {qrCodeImage && (
-              <div className="relative h-48 w-48 rounded-lg overflow-hidden border p-2">
-                <Image
-                  src={qrCodeImage.imageUrl}
-                  alt={qrCodeImage.description}
-                  width={300}
-                  height={300}
-                  className="rounded-md"
-                  data-ai-hint={qrCodeImage.imageHint}
-                />
-              </div>
-            )}
-            <Button size="lg" className="w-full bg-accent text-accent-foreground hover:bg-accent/90">
+            <div className="relative h-64 w-64 rounded-lg overflow-hidden border p-2 bg-white">
+              <Image
+                src="/qr-code.jpeg"
+                alt="Donation QR Code"
+                fill
+                unoptimized
+                className="rounded-md object-contain"
+              />
+            </div>
+            <Button 
+              size="lg" 
+              className="w-full bg-accent text-accent-foreground hover:bg-accent/90"
+              onClick={() => window.open('https://docs.google.com/forms/d/e/1FAIpQLSeFr_hjK6XikPPX0FbSCasm2schfnfnPGwI7ERm4gdggSojlg/viewform?usp=publish-editor', '_blank')}
+            >
               Donate Now
             </Button>
           </CardContent>

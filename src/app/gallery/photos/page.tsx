@@ -1,10 +1,11 @@
 import Image from 'next/image';
-import { PlaceHolderImages } from '@/lib/placeholder-images';
 import {
   Dialog,
   DialogContent,
   DialogTrigger,
+  DialogTitle,
 } from '@/components/ui/dialog';
+import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
@@ -12,11 +13,16 @@ export const metadata: Metadata = {
   description: 'A collection of memories from the Mujjar Mita Mandal group.',
 };
 
-export default function PhotoGalleryPage() {
-  const photoImages = PlaceHolderImages.filter((image) =>
-    image.id.startsWith('gallery-photo-')
-  );
+const galleryPhotos = [
+  { id: 1, src: '/gallery/photo-1.jpeg', alt: 'Gallery Photo 1' },
+  { id: 2, src: '/gallery/photo-2.jpeg', alt: 'Gallery Photo 2' },
+  { id: 3, src: '/gallery/photo-3.jpeg', alt: 'Gallery Photo 3' },
+  { id: 4, src: '/gallery/photo-4.jpeg', alt: 'Gallery Photo 4' },
+  { id: 5, src: '/gallery/photo-5.jpeg', alt: 'Gallery Photo 5' },
+  { id: 6, src: '/gallery/photo-6.jpeg', alt: 'Gallery Photo 6' },
+];
 
+export default function PhotoGalleryPage() {
   return (
     <div className="bg-background">
       <div className="container mx-auto px-4 py-16 md:py-24">
@@ -30,29 +36,32 @@ export default function PhotoGalleryPage() {
         </div>
 
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {photoImages.map((image) => (
-            <Dialog key={image.id}>
+          {galleryPhotos.map((photo) => (
+            <Dialog key={photo.id}>
               <DialogTrigger asChild>
                 <div className="relative aspect-video w-full cursor-pointer overflow-hidden rounded-lg shadow-md transition-transform duration-300 hover:scale-105 hover:shadow-xl group">
                   <Image
-                    src={image.imageUrl}
-                    alt={image.description}
+                    src={photo.src}
+                    alt={photo.alt}
                     fill
+                    unoptimized
                     className="object-cover"
                     sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, (max-width: 1024px) 33vw, 25vw"
-                    data-ai-hint={image.imageHint}
                   />
                   <div className="absolute inset-0 bg-black/20 group-hover:bg-black/0 transition-colors" />
                 </div>
               </DialogTrigger>
               <DialogContent className="max-w-3xl p-2">
+                <VisuallyHidden>
+                  <DialogTitle>{photo.alt}</DialogTitle>
+                </VisuallyHidden>
                 <div className="relative aspect-video w-full">
                   <Image
-                    src={image.imageUrl}
-                    alt={image.description}
+                    src={photo.src}
+                    alt={photo.alt}
                     fill
+                    unoptimized
                     className="object-contain rounded-md"
-                    data-ai-hint={image.imageHint}
                   />
                 </div>
               </DialogContent>
