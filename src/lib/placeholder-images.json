@@ -1,3 +1,178 @@
 {
-  "placeholderImages": []
+  "placeholderImages": [
+    {
+      "id": "hero-1",
+      "description": "A group of friends laughing together at a scenic viewpoint during sunset.",
+      "imageUrl": "https://images.unsplash.com/photo-1511632765486-a01980e01a18?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHxmcmllbmRzJTIwc3Vuc2V0fGVufDB8fHx8MTc2OTg0NDE1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "friends sunset"
+    },
+    {
+      "id": "member-1",
+      "description": "Portrait of the group leader, smiling confidently.",
+      "imageUrl": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxtYW4lMjBwb3J0cmFpdHxlbnwwfHx8fDE3Njk3NTQzOTB8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man portrait"
+    },
+    {
+      "id": "member-2",
+      "description": "Portrait of a friendly-looking group member.",
+      "imageUrl": "https://images.unsplash.com/photo-1623184663110-89ba5b565eb6?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxtYW4lMjBzbWlsaW5nfGVufDB8fHx8MTc2OTc5MTc0M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man smiling"
+    },
+    {
+      "id": "member-3",
+      "description": "Portrait of a group member with a thoughtful expression.",
+      "imageUrl": "https://images.unsplash.com/photo-1527565290982-018bcfdbee74?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxwZXJzb24lMjB0aGlua2luZ3xlbnwwfHx8fDE3Njk3NzMyOTN8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person thinking"
+    },
+    {
+      "id": "member-4",
+      "description": "Portrait of an energetic group member mid-laugh.",
+      "imageUrl": "https://images.unsplash.com/photo-1611695434369-a8f5d76ceb7b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxtYW4lMjBsYXVnaGluZ3xlbnwwfHx8fDE3Njk4MDk5NjF8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "man laughing"
+    },
+    {
+      "id": "member-5",
+      "description": "Portrait of a calm and composed group member.",
+      "imageUrl": "https://images.unsplash.com/photo-1592621385612-4d7129426394?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwzfHx3b21hbiUyMHBvcnRyYWl0fGVufDB8fHx8MTc2OTgzOTYyNnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman portrait"
+    },
+    {
+      "id": "member-6",
+      "description": "Portrait of a cheerful group member giving a thumbs up.",
+      "imageUrl": "https://images.unsplash.com/photo-1711645169736-53327e726205?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMHNtaWxpbmd8ZW58MHx8fHwxNzY5ODExNjc2fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman smiling"
+    },
+    {
+      "id": "member-7",
+      "description": "Portrait of a stylish group member with sunglasses.",
+      "imageUrl": "https://images.unsplash.com/photo-1542596768-97135a93857e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwc3VuZ2xhc3Nlc3xlbnwwfHx8fDE3Njk4NDQxNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person sunglasses"
+    },
+    {
+      "id": "member-8",
+      "description": "Portrait of an adventurous group member.",
+      "imageUrl": "https://images.unsplash.com/photo-1518931169559-527a99b4074d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8cGVyc29uJTIwb3V0ZG9vcnN8ZW58MHx8fHwxNzY5Nzc5OTYxfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "person outdoors"
+    },
+    {
+      "id": "member-9",
+      "description": "Portrait of a group member with a creative vibe.",
+      "imageUrl": "https://images.unsplash.com/photo-1699570047113-16fdf623e83e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHx3b21hbiUyMGNyZWF0aXZlfGVufDB8fHx8MTc2OTg0NDE1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "woman creative"
+    },
+    {
+      "id": "gallery-photo-1",
+      "description": "Group of friends on a hiking trip, posing on a mountain top.",
+      "imageUrl": "https://images.unsplash.com/photo-1607015646132-ee3b6a524ade?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmcmllbmRzJTIwaGlraW5nfGVufDB8fHx8MTc2OTc3MzI5M3ww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "friends hiking"
+    },
+    {
+      "id": "gallery-photo-2",
+      "description": "Friends enjoying a bonfire at a beach camp.",
+      "imageUrl": "https://images.unsplash.com/photo-1659468551190-6aeeb5b5cfed?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHxmcmllbmRzJTIwYm9uZmlyZXxlbnwwfHx8fDE3Njk4NDQxNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "friends bonfire"
+    },
+    {
+      "id": "gallery-photo-3",
+      "description": "Celebrating a birthday with a cake and party hats.",
+      "imageUrl": "https://images.unsplash.com/photo-1530103862676-de8c9debad1d?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw3fHxiaXJ0aGRheSUyMHBhcnR5fGVufDB8fHx8MTc2OTgzNTkzNHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "birthday party"
+    },
+    {
+      "id": "gallery-photo-4",
+      "description": "Group selfie during a traditional festival.",
+      "imageUrl": "https://images.unsplash.com/photo-1663162550974-aaf76bcdeedf?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxncm91cCUyMHNlbGZpZXxlbnwwfHx8fDE3Njk3NDc4MDh8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "group selfie"
+    },
+    {
+      "id": "gallery-photo-5",
+      "description": "Friends playing cricket in a local ground.",
+      "imageUrl": "https://images.unsplash.com/photo-1753443278919-b0de48cf8b7e?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxwbGF5aW5nJTIwY3JpY2tldHxlbnwwfHx8fDE3Njk4NDQxNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "playing cricket"
+    },
+    {
+      "id": "gallery-photo-6",
+      "description": "A candid shot of friends chatting and laughing at a cafe.",
+      "imageUrl": "https://images.unsplash.com/photo-1706479765995-6572488b9112?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw5fHxmcmllbmRzJTIwY2FmZXxlbnwwfHx8fDE3Njk4NDQxNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "friends cafe"
+    },
+    {
+      "id": "gallery-photo-7",
+      "description": "Group trip to a historical fort.",
+      "imageUrl": "https://images.unsplash.com/photo-1707524882756-4e643f81903c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxoaXN0b3JpY2FsJTIwZm9ydHxlbnwwfHx8fDE3Njk4NDQxNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "historical fort"
+    },
+    {
+      "id": "gallery-photo-8",
+      "description": "Friends volunteering for a local community event.",
+      "imageUrl": "https://images.unsplash.com/photo-1754507128300-5d2023d3958c?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmcmllbmRzJTIwdm9sdW50ZWVyaW5nfGVufDB8fHx8MTc2OTg0NDE1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "friends volunteering"
+    },
+    {
+      "id": "gallery-photo-9",
+      "description": "Road trip adventure, friends in a car.",
+      "imageUrl": "https://images.unsplash.com/photo-1603153480821-211dc7149343?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxmcmllbmRzJTIwcm9hZHRyaXB8ZW58MHx8fHwxNzY5ODQ0MTU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "friends roadtrip"
+    },
+    {
+      "id": "gallery-photo-10",
+      "description": "Attending a music concert together.",
+      "imageUrl": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw2fHxtdXNpYyUyMGNvbmNlcnR8ZW58MHx8fHwxNzY5NzgwNzEyfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "music concert"
+    },
+    {
+      "id": "gallery-photo-11",
+      "description": "Cooking together for a group dinner.",
+      "imageUrl": "https://images.unsplash.com/photo-1716326570280-df0c2f89717a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8ZnJpZW5kcyUyMGNvb2tpbmd8ZW58MHx8fHwxNzY5ODQ0MTU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "friends cooking"
+    },
+    {
+      "id": "gallery-photo-12",
+      "description": "Group photo at a wedding.",
+      "imageUrl": "https://images.unsplash.com/photo-1766043373249-ca2b010e6802?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwyfHxmcmllbmRzJTIwd2VkZGluZ3xlbnwwfHx8fDE3Njk4NDQxNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "friends wedding"
+    },
+    {
+      "id": "gallery-video-1",
+      "description": "A video of friends celebrating Holi festival.",
+      "imageUrl": "https://images.unsplash.com/photo-1767328826961-9b439d4a559a?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxmZXN0aXZhbCUyMGNlbGVicmF0aW9ufGVufDB8fHx8MTc2OTg0NDE1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "festival celebration"
+    },
+    {
+      "id": "gallery-video-2",
+      "description": "A travel montage from a group trip to the mountains.",
+      "imageUrl": "https://images.unsplash.com/photo-1718372747290-c98b2c95f5b4?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw1fHx0cmF2ZWwlMjBtb250YWdlfGVufDB8fHx8MTc2OTg0NDE1NHww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "travel montage"
+    },
+    {
+      "id": "gallery-video-3",
+      "description": "Funny bloopers and moments captured on camera.",
+      "imageUrl": "https://images.unsplash.com/photo-1758598738053-38fe05aa2f34?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxmdW5ueSUyMG1vbWVudHN8ZW58MHx8fHwxNzY5ODQ0MTU0fDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "funny moments"
+    },
+    {
+      "id": "gallery-video-4",
+      "description": "A dance performance by the group at an event.",
+      "imageUrl": "https://images.unsplash.com/photo-1508807526345-15e9b5f4eaff?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw0fHxkYW5jZSUyMHBlcmZvcm1hbmNlfGVufDB8fHx8MTc2OTgyODQ3Nnww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "dance performance"
+    },
+    {
+      "id": "gallery-video-5",
+      "description": "A short film created by the group.",
+      "imageUrl": "https://images.unsplash.com/photo-1627757878295-3388ff5de548?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxMHx8c2hvcnQlMjBmaWxtfGVufDB8fHx8MTc2OTg0NDE1NXww&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "short film"
+    },
+    {
+      "id": "gallery-video-6",
+      "description": "Highlights from a sports match played by the group.",
+      "imageUrl": "https://images.unsplash.com/photo-1729538686921-a8c97d937ed7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHwxfHxzcG9ydHMlMjBtYXRjaHxlbnwwfHx8fDE3Njk4NDQxNTR8MA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "sports match"
+    },
+    {
+      "id": "donate-qr",
+      "description": "A generic QR code for donations.",
+      "imageUrl": "https://images.unsplash.com/photo-1652345408103-7fbe3dd59324?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3NDE5ODJ8MHwxfHNlYXJjaHw4fHxRUiUyMGNvZGV8ZW58MHx8fHwxNzY5NzYyNDQwfDA&ixlib=rb-4.1.0&q=80&w=1080",
+      "imageHint": "QR code"
+    }
+  ]
 }
