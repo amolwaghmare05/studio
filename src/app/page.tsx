@@ -73,7 +73,7 @@ export default function Home() {
                   <CardContent className="p-0">
                     <div className="relative w-full aspect-square bg-muted">
                       <Image
-                        src={`/members/member-${member.id}.png`}
+                        src={`/members/member-${member.id}.${member.id === 5 ? 'jpeg' : 'png'}`}
                         alt={member.name}
                         fill
                         unoptimized

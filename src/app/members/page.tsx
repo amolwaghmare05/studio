@@ -31,7 +31,7 @@ export default function MembersPage() {
                 <CardContent className="p-0 text-center">
                   <div className="relative w-full aspect-square overflow-hidden">
                     <Image
-                      src={`/members/member-${member.id}.png`}
+                      src={`/members/member-${member.id}.${member.id === 5 ? 'jpeg' : 'png'}`}
                       alt={`Profile of ${member.name}`}
                       fill
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
