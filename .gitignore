@@ -4,7 +4,7 @@
 /node_modules
 /.pnp
 .pnp.js
-.pnp.cjs
+.pnp.loader.mjs
 
 # testing
 /coverage
@@ -38,12 +38,3 @@ pnpm-debug.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
-
-# editor directories and files
-.idea
-.vscode
-*.suo
-*.ntvs*
-*.njsproj
-*.sln
-*.sw?
