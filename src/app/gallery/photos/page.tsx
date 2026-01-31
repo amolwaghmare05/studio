@@ -29,7 +29,6 @@ const galleryPhotos = [
   { id: 13, src: '/gallery/photo-13.jpeg', alt: 'Gallery Photo 13' },
   { id: 14, src: '/gallery/photo-14.jpeg', alt: 'Gallery Photo 14' },
   { id: 15, src: '/gallery/photo-15.jpeg', alt: 'Gallery Photo 15' },
-  { id: 16, src: '/gallery/photo-16.jpeg', alt: 'Gallery Photo 16' },
   { id: 17, src: '/gallery/photo-17.jpeg', alt: 'Gallery Photo 17' },
   { id: 18, src: '/gallery/photo-18.jpeg', alt: 'Gallery Photo 18' },
   { id: 19, src: '/gallery/photo-19.jpeg', alt: 'Gallery Photo 19' },
@@ -41,7 +40,6 @@ const galleryPhotos = [
   { id: 25, src: '/gallery/photo-25.jpeg', alt: 'Gallery Photo 25' },
   { id: 26, src: '/gallery/photo-26.jpeg', alt: 'Gallery Photo 26' },
   { id: 27, src: '/gallery/photo-27.jpeg', alt: 'Gallery Photo 27' },
-  { id: 28, src: '/gallery/photo-28.jpeg', alt: 'Gallery Photo 28' },
   { id: 29, src: '/gallery/photo-29.jpeg', alt: 'Gallery Photo 29' },
 ];
 
