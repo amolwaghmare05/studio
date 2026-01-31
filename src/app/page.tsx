@@ -79,7 +79,7 @@ export default function Home() {
                         unoptimized
                         className="object-cover transition-transform duration-300 group-hover:scale-105"
                         sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                        style={member.id === 10 ? { objectPosition: 'center 20%' } : member.id === 8 ? { objectPosition: 'center 20%' } : undefined}
+                        style={member.id === 10 ? { objectPosition: 'center 20%' } : member.id === 8 ? { objectPosition: 'center 20%' } : member.id === 5 ? { objectPosition: 'center 25%' } : undefined}
                       />
                     </div>
                     <div className="p-4">

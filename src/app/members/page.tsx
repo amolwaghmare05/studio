@@ -36,7 +36,7 @@ export default function MembersPage() {
                       fill
                       className="object-cover transition-transform duration-300 group-hover:scale-105"
                       sizes="(max-width: 640px) 100vw, (max-width: 768px) 50vw, 33vw"
-                      style={member.id === 10 ? { objectPosition: 'center 38%' } : member.id === 8 ? { objectPosition: 'center 0%' } : undefined}
+                      style={member.id === 10 ? { objectPosition: 'center 38%' } : member.id === 8 ? { objectPosition: 'center 1%' } : member.id === 5 ? { objectPosition: 'center 20%' } : undefined}
                     />
                   </div>
                   <div className="p-6">
