@@ -126,6 +126,21 @@ export default function Home() {
             </div>
         </div>
       </section>
+
+      {/* Donate Section */}
+      <section id="donate" className="py-16 md:py-24 bg-secondary">
+        <div className="container mx-auto px-4 text-center">
+          <h2 className="font-headline text-3xl md:text-4xl font-semibold text-primary">मंडळाला सपोर्ट करा</h2>
+          <p className="mt-4 max-w-3xl mx-auto text-lg text-muted-foreground">
+            तुमचे योगदान आम्हाला विविध उपक्रम आणि कार्यक्रम आयोजित करण्यास मदत करते. तुमच्या समर्थनाबद्दल धन्यवाद!
+          </p>
+          <div className="mt-8">
+            <Button asChild size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90">
+              <Link href="/donate">आता देणगी द्या</Link>
+            </Button>
+          </div>
+        </div>
+      </section>
     </div>
   );
 }
